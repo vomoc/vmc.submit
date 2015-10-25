@@ -1,0 +1,2 @@
+# VMCValidate
+VMCValidate 是一款AJAX提交数据并自动验证的jquery插件，支持数据验证失败界面回滚
