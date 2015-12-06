@@ -55,7 +55,6 @@
             rule: function(name, value) {
                 // 这里如果希望截断流程只能使用 alert 或者 confirm
                 // 如果使用div模拟的confirm需要在 vmcSubmit.extend() 中完成
-
                 if (confirm('确认?')) {
                     return true;
                 } else {
