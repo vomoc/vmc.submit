@@ -283,11 +283,9 @@
             /**
              * 同步安全数据到界面
              */
-            if (true === this.options.rollback) {
-                for (var n in this.fields) {
-                    var obj = this.fields[n];
-                    obj.set.call(this, n, this.safeData[n], this.safeData);
-                }
+            for (var n in this.fields) {
+                var obj = this.fields[n];
+                obj.set.call(this, n, this.safeData[n], this.safeData);
             }
 
             /**
@@ -377,5 +375,5 @@
         afterReset.call(this);
 
     };
-    
+
 })(jQuery);
